@@ -1,0 +1,1 @@
+data class UserLoginData(private val uid:String, private val name:String)
