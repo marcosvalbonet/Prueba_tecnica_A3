@@ -1,49 +1,50 @@
-2. Ejercicio 1
-3. 
-Dado el código proporcionado en la carpeta Ejercicio 1, responde a los siguientes puntos:
+<em>2. Ejercicio 1</em>
+
+<p>Dado el código proporcionado en la carpeta Ejercicio 1, responde a los siguientes puntos:</p>
 
 2.1 DESCRIPCIÓN Y RESPUÉSTAS
 
-Escribe una breve memoria explicando el propósito del código que realiza la función combineOutputs. En ella,
+<p>Escribe una breve memoria explicando el propósito del código que realiza la función combineOutputs. En ella,
 contesta también a las siguientes cuestiones:
 -¿Por qué en el código se usa la operación .copy?
 -¿Por qué en el código se usan las operaciones .apply?
 -¿Qué ocurriría si se cambiasen por un .also?
--¿Por qué es necesario utilizar la operación toMutableList?
+-¿Por qué es necesario utilizar la operación toMutableList?</p>
 
-La función combineOutputs nos devuelve un resultado de tipo CustomResult.
+<br>La función combineOutputs nos devuelve un resultado de tipo CustomResult.<br>
 El objetivo de la funcion es combinar en RSuccess las variables priorityResult y secondaryResult cuando 
-ambas son RSuccess segun la siguiente lógica:
+ambas son RSuccess segun la siguiente lógica:</br>
 Si priorityResult tiene el mismo id que secondaryResult entonces se suman las cantidades de los productos 
-y se combinan las listas de proveedores.
+y se combinan las listas de proveedores.</br>
 Si no tienen los mismos Id, entonces devolvemos priorityResult sin ninguna modificación
 Y devolvemos un error CustomResult.RCriticalError si priorityResult y/o secondaryResult no son RSuccess
+</p>
 
--¿Por qué en el código se usa la operación .copy? 
+<p>-¿Por qué en el código se usa la operación .copy? </br>
 Utilizamos copy para obtener una copia de product (id, amount, providers) en una instancia nueva.
 De este modo no modificar el product de priorityResult.
-En esta nueva copia, insertamos el nuevo amount y providers combinados.
+En esta nueva copia, insertamos el nuevo amount y providers combinados.</p>
 
--¿Por qué en el código se usan las operaciones .apply?
+<p>-¿Por qué en el código se usan las operaciones .apply?</br>
 Apply nos permite utilizar un bloque de código dentro de un objeto y realizar las modificaciones 
-necesarias ya que nos devolverá el objeto modificado.
+necesarias ya que nos devolverá el objeto modificado.</p>
 
--¿Qué ocurriría si se cambiasen por un .also?
+<p>-¿Qué ocurriría si se cambiasen por un .also?</br>
 Also nos pemitiría programar un bloque de codigo dentro de un objeto con la diferencia que also
-no devuelve el objeto cambiado.
+no devuelve el objeto cambiado.</p>
 
--¿Por qué es necesario utilizar la operación toMutableList?
+<p>-¿Por qué es necesario utilizar la operación toMutableList?</br>
 Porque la lista puede que no sea Mutable, con toMutableList nos aseguramos que podemos realizar
-modificaciones en ella.
+modificaciones en ella.</p>
 
 2.2 TESTING
 
-He realizado los siguientes Test que estan en el mismo archivo QuestionTest1.kt
-'when both param are RSuccess and the same id return combine Outputs'
-'when both param are RSuccess and not the same id return first without combine Outputs'
-'when a param is not RSuccess return critical error'
+<p>He realizado los siguientes Test que estan en el mismo archivo QuestionTest1.kt<br/>
+'when both param are RSuccess and the same id return combine Outputs'<br/>
+'when both param are RSuccess and not the same id return first without combine Outputs'<br/>
+'when a param is not RSuccess return critical error'</p>
 
-Normalmente estarían ubicados estos test en la PackageName sección (test)
+<p>Normalmente estarían ubicados estos test en la PackageName sección (test)</p>
 
 2.3 OPTIMIZACION
 
@@ -54,34 +55,34 @@ Normalmente estarían ubicados estos test en la PackageName sección (test)
 
 3.1 DESARROLLO
 
-Completada la función getMoviesInPlatforms en QuestionTest2.kt
+<p>Completada la función getMoviesInPlatforms en QuestionTest2.kt</p>
 
 3.2 TESTING
 
-Realizados los siguientes tests en QuestionTest2.kt
+<p>Realizados los siguientes tests en QuestionTest2.kt<br/>
 
-`get movies in platforms result the movie that appears in platforms`
-`get movies in platforms not return the movie that not appear in platforms`
-`get movies in platforms return empty list when all movies don't have platform`
+`get movies in platforms result the movie that appears in platforms`<br/>
+`get movies in platforms not return the movie that not appear in platforms`<br/>
+`get movies in platforms return empty list when all movies don't have platform`</p>
 
 4. Ejercicio 3
 
-Código realizado en QuestionTest3.kt
+<p>Código realizado en QuestionTest3.kt</p>
 
 
 5. Ejercicio 4
 
 5.1 DESARROLLO
 
-Código realizado en QuestionTest4.kt
+<p>Código realizado en QuestionTest4.kt</p>
 
 5.2 TESTING
 
-Realizados los siguientes tests en QuestionTest4.kt
+<p>Realizados los siguientes tests en QuestionTest4.kt<br/>
 
-`when call combined let with two vaules execute lambda with values`
-`when value1 is null does not execute lambda`
-`when value2 is null does not execute lambda`
-`when both values null does not execute lambda`
+`when call combined let with two vaules execute lambda with values`<br/>
+`when value1 is null does not execute lambda`<br/>
+`when value2 is null does not execute lambda`<br/>
+`when both values null does not execute lambda`<p>
 
 
