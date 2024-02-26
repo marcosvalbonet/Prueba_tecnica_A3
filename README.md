@@ -1,7 +1,9 @@
 2. Ejercicio 1
+3. 
 Dado el código proporcionado en la carpeta Ejercicio 1, responde a los siguientes puntos:
 
 2.1 DESCRIPCIÓN Y RESPUÉSTAS
+
 Escribe una breve memoria explicando el propósito del código que realiza la función combineOutputs. En ella,
 contesta también a las siguientes cuestiones:
 -¿Por qué en el código se usa la operación .copy?
@@ -35,6 +37,7 @@ Porque la lista puede que no sea Mutable, con toMutableList nos aseguramos que p
 modificaciones en ella.
 
 2.2 TESTING
+
 He realizado los siguientes Test que estan en el mismo archivo QuestionTest1.kt
 'when both param are RSuccess and the same id return combine Outputs'
 'when both param are RSuccess and not the same id return first without combine Outputs'
@@ -48,26 +51,34 @@ Normalmente estarían ubicados estos test en la PackageName sección (test)
 
 
 3. Ejercicio 2
+
 3.1 DESARROLLO
+
 Completada la función getMoviesInPlatforms en QuestionTest2.kt
 
-TESTING
+3.2 TESTING
+
 Realizados los siguientes tests en QuestionTest2.kt
+
 `get movies in platforms result the movie that appears in platforms`
 `get movies in platforms not return the movie that not appear in platforms`
 `get movies in platforms return empty list when all movies don't have platform`
 
 4. Ejercicio 3
+
 Código realizado en QuestionTest3.kt
 
 
 5. Ejercicio 4
 
 5.1 DESARROLLO
+
 Código realizado en QuestionTest4.kt
 
-TESTING
+5.2 TESTING
+
 Realizados los siguientes tests en QuestionTest4.kt
+
 `when call combined let with two vaules execute lambda with values`
 `when value1 is null does not execute lambda`
 `when value2 is null does not execute lambda`
